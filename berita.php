@@ -37,7 +37,7 @@ include_once("inc/inc_fungsi.php");
 
  
 
-
+    
 
     <link rel="stylesheet" href="<?php echo url_dasar()?>/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -63,12 +63,16 @@ include_once("inc/inc_fungsi.php");
    
 </head>
 <body>
+
+
+
+
     <!-- Font Awesome CDN -->
    <div class="navbar"><nav>
         
         <div class="wrapper">
             <div class="logo">
-             <a href="index.php"><img class="logo" border="0" src="gambar/smkn3su.jpg" width="60px" style="margin: 2px; padding: 0px" alt="" class="img-fluid"><a href='<?php echo url_dasar()?>'><h6>Smkn3su</h6></a></a>
+             <a href="index.php"><img class="logo" border="0" src="gambar/smkn3su.jpg" width="60px" style="margin: 2px; padding: 0px" alt="" class="img-fluid"><a href='<?php echo url_dasar()?>'><h6>Smkn3Su</h6></a></a>
           
             </div>
             
@@ -78,9 +82,10 @@ include_once("inc/inc_fungsi.php");
                     <li><a href="<?php echo url_dasar()?>#pendidik" class="bi bi-person-badge">Pendidik</a></li>                    
                     <li><a href="<?php echo url_dasar()?>#partnership" class="bi bi-hand-thumbs-up">Partnership</a></li>
                     <li><a href="<?php echo url_dasar()?>#galeri" class="bi bi-claude">Galeri</a></li>
-                    <li><a href="berita.php" class="bi bi-claude">Berita</a></li>
+
                     <li><a href="<?php echo url_dasar()?>#contact" class="bi bi-person-rolodex">Contact</a></li>
-                    <li><a href="login.php" class="tbl-biru bi bi-house-lock"></a></li>
+                    <li><a href="berita.php" class="bi bi-claude">Berita</a></li>
+                    <li><a href="login.php" class="tbl-biru bi bi-house-lock" target="_blank"></a></li>
                 </ul>
             </div>
         </div>
@@ -89,58 +94,6 @@ include_once("inc/inc_fungsi.php");
    
 
 
-<!-- untuk home -->
- <div class="wrapper">
-        <section id="home">
-            <img src="<?php echo ambil_gambar('9')?>"/>
-            <div class="kolom" data-aos="fade-up" data-aos-duration="1000">
-                <p class="deskripsi"><?php echo ambil_kutipan('6') ?></p>
-                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><?php echo ambil_judul('6') ?></h2>
-                <?php echo maximum_kata(ambil_isi('6'),30) ?>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="<?php echo buat_link_halaman('6')?>" class="tbl-pink">Halaman lebih lanjut</a></p>
-            </div>
-        </section>
-
-        <!-- untuk courses -->
-        <section id="courses">
-            <div class="kolom" data-aos="fade-up" data-aos-duration="1000">
-                <p class="deskripsi"><?php echo ambil_kutipan('7') ?></p>
-                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><?php echo ambil_judul('7') ?></h2>
-                <?php echo maximum_kata(ambil_isi('7'),30) ?>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="<?php echo buat_link_halaman('7')?>" class="tbl-biru">Halaman lebih lanjut</a></p>
-            </div>
-            <img src="<?php echo ambil_gambar('7')?>"/>
-        </section>
-
-        <!-- untuk wakil kepala -->
-        <section id="pendidik">
-            <div class="tengah">
-                <div class="kolom">
-                    <p class="deskripsi"><h2 data-aos="fade-up" data-aos-duration="1000">Pendidik Dan Tenaga Kependidikan</h2>
-                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Wakil Kepala Sekolah (Wakasek) adalah pejabat yang membantu Kepala Sekolah dalam merencanakan, melaksanakan, dan mengevaluasi semua kegiatan sekolah. Tugasnya berfokus pada bidang-bidang tertentu seperti Kurikulum, Kesiswaan, Sarana dan Prasarana, serta Hubungan Masyarakat (Humas).</p></p>
-                    
-                </div>
-
-                <div class="tutor-list" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <?php
-                        $sql1   ="select * from wakilkepala order by id desc";
-                        $q1     = mysqli_query($koneksi,$sql1);
-                        while ($r1 = mysqli_fetch_array($q1)) {
-                    ?>
-                        <div class="kartu-tutor" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                            
-                            <a href="<?php echo buat_link_waka($r1['id'])?>">
-                             <img src="<?php echo url_dasar()."/gambar/".wakil_kepala($r1['id'])?>"/>
-                             <p><b><?php echo $r1['nama']?></b><br><?php echo $r1['jabatan']?></br></p>
-                             
-                            </a>
-                         </div>
-                    <?php
-                    }
-                    ?>
-                </div>
-            </div>
-        </section>
 
      
 
@@ -195,8 +148,19 @@ include_once("inc/inc_fungsi.php");
                     <div class="card">
     
   </div>
-                    <b><p>adalah</b> salah satu bentuk satuan pendidikan formal yang menyelenggarakan pendidikan kejuruan pada jenjang pendidikan menengah yang mempersiapkan peserta didik terutama untuk bekerja di bidang tertentu.</p>
+                    <b><p>adalah</b> "Meniti Langkah Gemilang Generasi Yang Cerdas,Tangguh Dan Berkarakter".</p>
+                <div class="social">
+                      <a href="#"><i class="bi bi-twitter"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="https://instagram.com/smkn3su" target="_blank"><i class="bi bi-instagram"></i></a>
+                      <a href="https://api.whatsapp.com/send?phone=6287782200111" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                      <a href="#" target="_blank"><i class="bi bi-skype"></i></a>
+                      <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+                      <a href="https://www.youtube.com/@smkn3sukatanipurwakarta605" target="_blank"><i class="bi bi-youtube"></i></a>
+                    </div>
                 </div>
+
+                
                
                 <div class="footer-section">
                     <h4>Sarana dan Prasarana</h4>
@@ -208,41 +172,54 @@ include_once("inc/inc_fungsi.php");
                     <h4>Contact</h4>
                     <p>JL. Desa Sukamaju Rt.002/001 Desa. Sukamaju 
                         kec. Sukatani Purwakarta Jawa Barat 41167</p>
-                     <p>NPSN : 69849090</p>
-                    <p>Telepon	:	081288369394</p>
- 	                <p>Email	:	smkn3sukatani2014@gmail.com</p>
+                     <strong>Phone:</strong> +62 812 8836 9394<br />
+                  <strong>Email:</strong>smkn3su@gmail.com<br />
  	                
                 </div>
                 <div class="footer-section">
-                    <h4>Social</h4>
-                    <p>  <a href="http://www.twitter.com/smkn3su/" class="twitter"><i class="bx bxl-x"></i></a>
-
-                    
-                        <a href="https://www.facebook.com/NegasuPWK/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                        <a href="https://www.instagram.com/smkn3su" class="instagram"><i class="bx bxl-instagram"></i></a>
-                        <a href="https://www.youtube.com/@smkn3sukatanipurwakarta605/" class="youtube"><i class="bx bxl-youtube"></i></a>
-                        <a href="https://www.smkn3su.sch.id/" class="web"><i class="bx bx-globe"></i></a>
-                    
-                </div>
-               
+                
+                
+              <h4>Pranala Luar</h4>
+              
+                <i class="bx bx-chevron-right"></i> <a href="https://www.kemdikbud.go.id" target="_blank">Kemdikbud RI</a>
+                <i class="bx bx-chevron-right"></i> <a href="http://smk.kemdikbud.go.id" target="_blank">Direktorat SMK</a>
+                <i class="bx bx-chevron-right"></i> <a href="https://gtk.belajar.kemdikbud.go.id" target="_blank">Sim PKB</a>
+                <i class="bx bx-chevron-right"></i> <a href="https://info.gtk.kemdikbud.go.id" target="_blank">Info GTK</a>
+                <i class="bx bx-chevron-right"></i> <a href="https://referensi.data.kemdikbud.go.id/index11.php" target="_blank">NPSN</a>
+                <i class="bx bx-chevron-right"></i> <a href="https://nisn.data.kemdikbud.go.id" target="_blank">NISN</a></li>
+                <i class="bx bx-chevron-right"></i> <a href="https://pddikti.kemdiktisaintek.go.id/" target="_blank">PDDikti</a></li>
+              
+            </div>
+            <div class="wrapper">
+            <div class="col-lg-2 col-md-6 footer-links"><p>
+              <h4>Hubungi Customer Support</h4>
+             <br> <a class="cta-btn" href="https://api.whatsapp.com/send?phone=6281288369394" target="_blank">Send Message</a> Mohon menyertakan informasi detail terkait kendala yang dialami. Dengan begitu, Customer Support kami bisa mencari solusi secepat mungkin.
+                  </br> </p>
+            </div>
         </div>
             </div>
         </div>
     </div>
 
     <body>
-    <nav>
-        
-    </nav>
+  
    
 
     <div id="copyright">
        
         <div class="wrapper">
-            <b>Copyright</b><b> &copy; <?php echo date("Y");?></b>#DinamikaSarprasSmkn3su.
+            <b> Copyright</b><b> &copy; <?php echo date("Y");?>  </b>SMKN 3 SUKATANI
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
+          Designed_by <a href="index.php">#DinamikaSarpras</a>
         </div>
     </div></footer>
 
+    
 
 
 
@@ -261,6 +238,49 @@ include_once("inc/inc_fungsi.php");
 
  <!-- JS -->
  <!-- JS -->
+<a href="index.php" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-</body>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwG-U_PIK5qZM1edUFDbyhhl6Ou-uCqu1mUdwUnpwLWmJyH-BGt2x2A0R6maX9SVUKd/exec'
+      const form = document.forms['wpu-contact-form']
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        // ketika tombol submit diklik
+        // Tampilkan tombol loading hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+
+        
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // tampilkan tombol kirim,Hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            myAlert.classList.toggle('d-none');
+            // reset form
+            form.reset();
+            console.log('Success!', response)})
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+  </body>
 </html> 

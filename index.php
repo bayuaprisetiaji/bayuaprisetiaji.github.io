@@ -72,7 +72,7 @@ include_once("inc/inc_fungsi.php");
         
         <div class="wrapper">
             <div class="logo">
-             <a href="index.php"><img class="logo" border="0" src="gambar/smkn3su.jpg" width="60px" style="margin: 2px; padding: 0px" alt="" class="img-fluid"><a href='<?php echo url_dasar()?>'><h6>Smkn3Sukatani</h6></a></a>
+             <a href="index.php"><img class="logo" border="0" src="gambar/smkn3su.jpg" width="60px" style="margin: 2px; padding: 0px" alt="" class="img-fluid"><a href='<?php echo url_dasar()?>'><h6>Smkn3Su</h6></a></a>
           
             </div>
             
@@ -197,6 +197,7 @@ include_once("inc/inc_fungsi.php");
                              <img src="<?php echo url_dasar()."/gambar/".tata_usaha($r1['id'])?>"/>
                              <p><?php echo $r1['nama']?><br><b><?php echo $r1['jabatan']?></br></b></p>
                             </a>
+                            
                          </div>
                     <?php
                     }
@@ -272,6 +273,7 @@ include_once("inc/inc_fungsi.php");
  <!-- ======= Cta Section ======= -->
       <section id="cta" class="cta">
         <div class="container" data-aos="zoom-in">
+          <div class="tengah">
           <div class="text-center">
             <h3>Hubungi Customer Support</h3>
             <p>Mohon menyertakan informasi detail terkait kendala yang dialami. Dengan begitu, Customer Support kami bisa mencari solusi secepat mungkin</p>
@@ -334,14 +336,16 @@ include_once("inc/inc_fungsi.php");
     
   </div>
                     <b><p>adalah</b> "Meniti Langkah Gemilang Generasi Yang Cerdas,Tangguh Dan Berkarakter".</p>
-                
-                <div class="social-links mt-3">
-                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                  <a href="https://instagram.com/smkn3su?igshid=YmMyMTA2M2Y=" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div></div>
+                <div class="social">
+                      <a href="#"><i class="bi bi-twitter"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="https://instagram.com/smkn3su" target="_blank"><i class="bi bi-instagram"></i></a>
+                      <a href="https://api.whatsapp.com/send?phone=6287782200111" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                      <a href="#" target="_blank"><i class="bi bi-skype"></i></a>
+                      <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+                      <a href="https://www.youtube.com/@smkn3sukatanipurwakarta605" target="_blank"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
 
                 
                
@@ -358,23 +362,26 @@ include_once("inc/inc_fungsi.php");
                      <strong>Phone:</strong> +62 812 8836 9394<br />
                   <strong>Email:</strong>smkn3su@gmail.com<br />
  	                
-                </div><div class="wrapper">
-                <div class="col-lg-2 col-md-6 footer-links">
+                </div>
+                <div class="footer-section">
+                
+                
               <h4>Pranala Luar</h4>
               
                 <i class="bx bx-chevron-right"></i> <a href="https://www.kemdikbud.go.id" target="_blank">Kemdikbud RI</a>
                 <i class="bx bx-chevron-right"></i> <a href="http://smk.kemdikbud.go.id" target="_blank">Direktorat SMK</a>
-                <i class="bx bx-chevron-right"></i> <a href="https://gtk.belajar.kemdikbud.go.id" target="_blank">Sim PKB Kemdikbud</a>
-                <i class="bx bx-chevron-right"></i> <a href="https://info.gtk.kemdikbud.go.id" target="_blank">Info GTK Kemdikbud</a>
-                <i class="bx bx-chevron-right"></i> <a href="https://referensi.data.kemdikbud.go.id/index11.php" target="_blank">NPSN Kemdikbud</a>
-                <i class="bx bx-chevron-right"></i> <a href="https://nisn.data.kemdikbud.go.id" target="_blank">NISN Kemdikbud</a></li>
+                <i class="bx bx-chevron-right"></i> <a href="https://gtk.belajar.kemdikbud.go.id" target="_blank">Sim PKB</a>
+                <i class="bx bx-chevron-right"></i> <a href="https://info.gtk.kemdikbud.go.id" target="_blank">Info GTK</a>
+                <i class="bx bx-chevron-right"></i> <a href="https://referensi.data.kemdikbud.go.id/index11.php" target="_blank">NPSN</a>
+                <i class="bx bx-chevron-right"></i> <a href="https://nisn.data.kemdikbud.go.id" target="_blank">NISN</a></li>
                 <i class="bx bx-chevron-right"></i> <a href="https://pddikti.kemdiktisaintek.go.id/" target="_blank">PDDikti</a></li>
               
             </div>
-            <div class="col-lg-2 col-md-6 footer-links">
+            <div class="wrapper">
+            <div class="col-lg-2 col-md-6 footer-links"><p>
               <h4>Hubungi Customer Support</h4>
-              <a class="cta-btn" href="https://api.whatsapp.com/send?phone=6281288369394" target="_blank">Send Message</a> Mohon menyertakan informasi detail terkait kendala yang dialami. Dengan begitu, Customer Support kami bisa mencari solusi secepat mungkin
-              
+             <br> <a class="cta-btn" href="https://api.whatsapp.com/send?phone=6281288369394" target="_blank">Send Message</a> Mohon menyertakan informasi detail terkait kendala yang dialami. Dengan begitu, Customer Support kami bisa mencari solusi secepat mungkin.
+                  </br> </p>
             </div>
         </div>
             </div>
@@ -395,7 +402,7 @@ include_once("inc/inc_fungsi.php");
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-          Designed by <a href="index.php">#DinamikaSarpras</a>
+          Designed_by <a href="index.php">#DinamikaSarpras</a>
         </div>
     </div></footer>
 
