@@ -200,3 +200,18 @@ function buat_link_galeri($id){
     // http://localhost/website-company-profile/halaman.php/8/judul
     return url_dasar()."/galeri.php/$id/$foto";
 }
+
+function cta($id){
+    global $koneksi;
+    $sql1  = "select * from galeri where id = '$id'";
+    $q1 = mysqli_query($koneksi,$sql1);
+    $r1 = mysqli_fetch_array($q1);
+    $foto = $r1['foto'];
+
+    if($foto){
+        return $foto;
+    } else {
+        return 'galeri.png';
+    }
+}
+
