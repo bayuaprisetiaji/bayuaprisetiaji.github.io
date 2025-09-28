@@ -72,7 +72,7 @@ include_once("inc/inc_fungsi.php");
         
         <div class="wrapper">
             <div class="logo">
-             <a href="index.php"><img class="logo" border="0" src="gambar/smkn3su.jpg" width="60px" style="margin: 2px; padding: 0px" alt="" class="img-fluid"><a href='<?php echo url_dasar()?>'><h6>Smkn3Su</h6></a></a>
+             <a href="index.php"><img class="logo" border="0" src="gambar/smkn3su.jpg" width="60px" style="margin: 2px; padding: 0px" alt="" class="img-fluid"><a href='<?php echo url_dasar()?>'><h6>Smkn3su</h6></a></a>
           
             </div>
             
@@ -370,9 +370,9 @@ include_once("inc/inc_fungsi.php");
               
                 <i class="bx bx-chevron-right"></i> <a href="https://www.kemdikbud.go.id" target="_blank">Kemdikbud RI</a>
                 <i class="bx bx-chevron-right"></i> <a href="http://smk.kemdikbud.go.id" target="_blank">Direktorat SMK</a>
-                <i class="bx bx-chevron-right"></i> <a href="https://gtk.belajar.kemdikbud.go.id" target="_blank">Sim PKB</a>
-                <i class="bx bx-chevron-right"></i> <a href="https://info.gtk.kemdikbud.go.id" target="_blank">Info GTK</a>
-                <i class="bx bx-chevron-right"></i> <a href="https://referensi.data.kemdikbud.go.id/index11.php" target="_blank">NPSN</a>
+                <i class="bx bx-chevron-right"></i> <a href="https://gtk.belajar.kemendikdasmen.go.id/" target="_blank">Sim PKB</a>
+                <i class="bx bx-chevron-right"></i> <a href="https://info.gtk.dikdasmen.go.id/" target="_blank">Info GTK</a>
+                <i class="bx bx-chevron-right"></i> <a href="https://referensi.data.kemendikdasmen.go.id/" target="_blank">NPSN</a>
                 <i class="bx bx-chevron-right"></i> <a href="https://nisn.data.kemdikbud.go.id" target="_blank">NISN</a></li>
                 <i class="bx bx-chevron-right"></i> <a href="https://pddikti.kemdiktisaintek.go.id/" target="_blank">PDDikti</a></li>
               
@@ -395,14 +395,14 @@ include_once("inc/inc_fungsi.php");
     <div id="copyright">
        
         <div class="wrapper">
-            <b> Copyright</b><b> &copy; <?php echo date("Y");?>  </b>SMKN 3 SUKATANI
+            <b> Copyright</b><b> &copy; <?php echo date("Y");?>  </b>Smkn3SUKATANI
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-          Designed_by <a href="index.php">#DinamikaSarpras</a>
+          Designed_by<a href="index.php">#DinamikaSarprasSmkn3su</a>
         </div>
     </div></footer>
 
